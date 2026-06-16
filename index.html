@@ -1,35 +1,94 @@
-# 🚗 پنل کنترل زنوتیک
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>پنل کنترل زنوتیک</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
 
-## دستورات سریع ردیاب
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-📍 [مکان خودرو در نقشه](sms:+989361663843?body=URL%23)
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
 
-ℹ️ [مکان خودرو با جزئیات](sms:+989361663843?body=URL%23WHERE%23)
+    a.button {
+      display: block;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      text-align: center;
+      transition: 0.2s;
+    }
 
-📶 [وضعیت ردیاب](sms:+989361663843?body=STATUS%23)
+    a.button:hover {
+      background: #1d4ed8;
+    }
 
-⚙️ [پارامترهای ردیاب](sms:+989361663843?body=PARAM%23)
+    .danger { background: #ef4444; }
+    .danger:hover { background: #dc2626; }
 
-🟢 [فعال‌سازی هشدار روشن شدن](sms:+989361663843?body=ACCREP,ON%23)
+    .success { background: #22c55e; }
+    .success:hover { background: #16a34a; }
 
-🔴 [غیرفعال‌سازی هشدار روشن شدن](sms:+989361663843?body=ACCREP,OFF%23)
+    .info {
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
 
-🚪 [فعال‌سازی هشدار باز شدن درب](sms:+989361663843?body=DOOR,ON%23)
+<body>
 
-🚫 [غیرفعال‌سازی هشدار باز شدن درب](sms:+989361663843?body=DOOR,OFF%23)
+  <h1>🚗 پنل کنترل زنوتیک</h1>
 
-🔔 [فعال‌سازی هشدار لرزش](sms:+989361663843?body=SHAKE,ON%23)
+  <div class="card">
+    <h3>📍 دستورات سریع ردیاب</h3>
 
-🔕 [غیرفعال‌سازی هشدار لرزش](sms:+989361663843?body=SHAKE,OFF%23)
+    <a class="button" href="sms:+989361663843?body=URL%23">📍 مکان خودرو در نقشه</a>
+    <a class="button" href="sms:+989361663843?body=URL%23WHERE%23">ℹ️ مکان خودرو با جزئیات</a>
+    <a class="button" href="sms:+989361663843?body=STATUS%23">📶 وضعیت ردیاب</a>
+    <a class="button" href="sms:+989361663843?body=PARAM%23">⚙️ پارامترهای ردیاب</a>
+  </div>
 
----
+  <div class="card">
+    <h3>🔔 هشدارها</h3>
 
-## 📞 شماره ردیاب
+    <a class="button success" href="sms:+989361663843?body=ACCREP,ON%23">🟢 فعال‌سازی هشدار روشن شدن</a>
+    <a class="button danger" href="sms:+989361663843?body=ACCREP,OFF%23">🔴 غیرفعال‌سازی هشدار روشن شدن</a>
 
-**09361663843**
+    <a class="button success" href="sms:+989361663843?body=DOOR,ON%23">🚪 فعال‌سازی هشدار باز شدن درب</a>
+    <a class="button danger" href="sms:+989361663843?body=DOOR,OFF%23">🚫 غیرفعال‌سازی هشدار باز شدن درب</a>
 
----
+    <a class="button success" href="sms:+989361663843?body=SHAKE,ON%23">🔔 فعال‌سازی هشدار لرزش</a>
+    <a class="button danger" href="sms:+989361663843?body=SHAKE,OFF%23">🔕 غیرفعال‌سازی هشدار لرزش</a>
+  </div>
 
-## ℹ️ راهنما
+  <div class="card">
+    <h3>📞 شماره ردیاب</h3>
+    <p style="text-align:center; font-size:18px;">09361663843</p>
+  </div>
 
-روی هر گزینه کلیک کنید تا پیامک مربوطه برای ردیاب آماده ارسال شود.
+  <div class="info">
+    روی دکمه‌ها کلیک کنید تا پیامک آماده ارسال شود.
+  </div>
+
+</body>
+</html>
